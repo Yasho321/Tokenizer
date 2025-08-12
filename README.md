@@ -1,12 +1,46 @@
-# React + Vite
+# Tokenizer — Web Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A tiny browser-first tokenizer that learns a vocab, encodes text → token IDs, and decodes IDs → text.
+Demo: **\[[Link](https://tokenizer-gamma.vercel.app/)]** · 
 
-Currently, two official plugins are available:
+Video: **\[[video](./src/assets/demo.mp4)]**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Quick Setup
 
-## Expanding the ESLint configuration
+**No setup required.** Open the demo link in a modern browser.
+To run locally (optional):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone <repo-url>
+cd tokenizer-app
+npm install
+npm run dev
+```
+
+## How to use
+
+1. Paste or type text in the **Input** panel.
+2. Right panel shows tokens + assigned IDs.
+3. Click **Copy IDs**, paste the comma-separated IDs into **Decode**.
+4. Decoded text appears below.
+
+## Features
+
+* Rule-based tokenization (word/number/punctuation/whitespace/special)
+* On-the-fly vocabulary with persistent `localStorage` IDs
+* Encode (text → IDs) and Decode (IDs → text) round-trip
+* Example inputs, reset vocabulary, copy to clipboard
+
+## Notes
+
+* Decoding expects valid IDs for the *current* vocabulary (resetting vocab changes IDs).
+* `localStorage` required for persistence.
+* To improve: add subword/BPE tokenization and O(1) reverse lookups.
+
+## Examples / Screenshots
+
+* Tokenization view: ![Tokenization image](./src/assets/Screenshot%202025-08-12%20190852.png)
+* Decode round-trip: ![Decoding Image](./src/assets/Screenshot%202025-08-12%20191025.png)
+
+
+
