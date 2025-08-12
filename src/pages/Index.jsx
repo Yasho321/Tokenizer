@@ -3,10 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Zap, Code2, Sparkles } from "lucide-react";
 import TextInput from "@/components/TextInput";
-import TokenVisualization from "@/components/TokenVisualization";
+
 import TokenEncoding from "@/components/TokenEncoding";
 import TokenDecoding from "@/components/TokenDecoding";
-import TokenStats from "@/components/TokenStats";
+
 
 const Index = () => {
   return (
@@ -24,12 +24,10 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow float">
                   <Code2 className="w-8 h-8 text-black font-bold" />
                 </div>
-                <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                  <Sparkles className="w-3 h-3 text-black" />
-                </div>
+               
               </div>
               <div>
-                <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
+                <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text  mb-2">
                   AI Tokenizer Studio
                 </h1>
                 <p className="text-muted-foreground text-lg">
@@ -39,10 +37,7 @@ const Index = () => {
             </div>
             
             <div className="flex items-center gap-3">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
-                <Zap className="w-3 h-3 mr-1" />
-                Live Demo
-              </Badge>
+              
               <Button 
                 variant="outline" 
                 size="sm"
@@ -50,7 +45,7 @@ const Index = () => {
                 asChild
               >
                 <a
-                  href="https://github.com/PiyushRepos/genai-tokenizer"
+                  href="https://github.com/Yasho321/Tokenizer"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -62,35 +57,7 @@ const Index = () => {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div className="flex items-center gap-3 p-4 bg-card/30 rounded-xl border border-border/30 backdrop-blur-sm">
-              <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-semibold">🔤</span>
-              </div>
-              <div>
-                <h3 className="font-semibold text-sm">Real-time Tokenization</h3>
-                <p className="text-xs text-muted-foreground">See tokens as you type</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-4 bg-card/30 rounded-xl border border-border/30 backdrop-blur-sm">
-              <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-semibold">🔢</span>
-              </div>
-              <div>
-                <h3 className="font-semibold text-sm">ID Encoding</h3>
-                <p className="text-xs text-muted-foreground">Token to ID mapping</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-4 bg-card/30 rounded-xl border border-border/30 backdrop-blur-sm">
-              <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-semibold">📊</span>
-              </div>
-              <div>
-                <h3 className="font-semibold text-sm">Smart Analytics</h3>
-                <p className="text-xs text-muted-foreground">Detailed statistics</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </header>
 
@@ -133,28 +100,13 @@ const Index = () => {
           </Card>
         </div>
 
-        {/* Visualization Section */}
-        <Card className="mb-12 bg-gradient-secondary border-border/50 shadow-card overflow-hidden">
-          <CardHeader className="bg-card/50 border-b border-border/30">
-            <CardTitle className="flex items-center gap-3 text-xl">
-              <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">🎨</span>
-              </div>
-              Interactive Token Visualization
-            </CardTitle>
-            <CardDescription>
-              Click any token to copy it • Color-coded by type • Real-time updates
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="p-8">
-            <TokenVisualization />
-          </CardContent>
-        </Card>
+        
+       
 
         {/* Bottom Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Decoding */}
-          <Card className="lg:col-span-1 bg-gradient-secondary border-border/50 shadow-card">
+          <Card className="lg:col-span-2 bg-gradient-secondary border-border/50 shadow-card">
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-3 text-lg">
                 <div className="w-7 h-7 bg-primary/20 rounded-lg flex items-center justify-center">
@@ -172,9 +124,7 @@ const Index = () => {
           </Card>
 
           {/* Statistics */}
-          <div className="lg:col-span-3">
-            <TokenStats />
-          </div>
+          
         </div>
       </main>
 
@@ -189,7 +139,7 @@ const Index = () => {
               <p className="text-sm">
                 Built by{" "}
                 <a 
-                  href="https://x.com/_PiyushDev" 
+                  href="https://x.com/Yasho_27_" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary/80 transition-colors font-medium"
@@ -201,7 +151,7 @@ const Index = () => {
             
             <div className="flex items-center gap-4">
               <a 
-                href="https://x.com/_PiyushDev" 
+                href="https://x.com/Yasho_27_" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors text-sm"
@@ -209,7 +159,7 @@ const Index = () => {
                 Twitter
               </a>
               <a 
-                href="https://www.linkedin.com/in/piyushh04/" 
+                href="https://www.linkedin.com/in/yashovardhan-singh-9bb28030b/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors text-sm"
@@ -217,7 +167,7 @@ const Index = () => {
                 LinkedIn
               </a>
               <a 
-                href="https://github.com/PiyushRepos" 
+                href="https://github.com/Yasho321" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors text-sm"
