@@ -3,7 +3,7 @@
 A tiny browser-first tokenizer that learns a vocab, encodes text → token IDs, and decodes IDs → text.
 Demo: **\[[Link](https://tokenizer-gamma.vercel.app/)]** · 
 
-Video: **\[[video](./src/assets/demo.mp4)]**
+
 
 ## Quick Setup
 
